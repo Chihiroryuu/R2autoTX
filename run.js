@@ -655,12 +655,7 @@ async function handleStakeR2USD(wallets) {
 async function main() {
   try {
     console.log('\n----------------------------------------');
-    console.log(`${colorText('    ██╗░░██╗███╗░░██╗████████╗██╗░░░░░██╗░░░██╗██╗░░██╗
-██║░██╔╝████╗░██║╚══██╔══╝██║░░░░░██║░░░██║╚██╗██╔╝
-█████═╝░██╔██╗██║░░░██║░░░██║░░░░░╚██╗░██╔╝░╚███╔╝░
-██╔═██╗░██║╚████║░░░██║░░░██║░░░░░░╚████╔╝░░██╔██╗░
-██║░╚██╗██║░╚███║░░░██║░░░███████╗░░╚██╔╝░░██╔╝╚██╗
-╚═╝░░╚═╝╚═╝░░╚══╝░░░╚═╝░░░╚══════╝░░░╚═╝░░░╚═╝░░╚═╝', COLORS.CYAN)}`);
+    console.log(`${colorText('    Bot by Chihiroryuu - for personal only', COLORS.CYAN)}`);
     console.log('----------------------------------------');
     
     console.log(`${EMOJI.INFO} ${colorText(`Loaded ${proxies.length} proxies from proxies.txt`, COLORS.GREEN)}`);
