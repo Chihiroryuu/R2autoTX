@@ -670,13 +670,12 @@ async function main() {
     
     console.log(`${EMOJI.INFO} ${colorText('USDC/R2USD/sR2USD Bot Starting on Sepolia Testnet...', COLORS.GREEN)}`);
     
-    const wallets = [];
+ const wallets = [];
     for (const privateKey of privateKeys) {
       try {
         const result = await initializeWallet(privateKey);
         wallets.push(result.wallet);
       } catch (error) {
-        // skip invalid private key
       }
     }
     if (wallets.length === 0) {
@@ -689,3 +688,10 @@ async function main() {
     rl.close();
   }
 }
+
+rl.on('close', () => {
+  console.log(`${EMOJI.INFO} ${colorText('Application exited.', COLORS.GRAY)}`);
+  process.exit(0);
+});
+
+main();
